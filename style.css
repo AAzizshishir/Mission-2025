@@ -1,0 +1,26 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+    /* Font Family */
+    --primaryFont: "Poppins", serif;
+    --secondaryFont: "Yeseva One", serif;
+    --footerPrimary: "Lobster", serif;
+    --footerSecondary: "Manrope", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    font-family: var(--primaryFont);
+}
