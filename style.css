@@ -1,26 +1,102 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
-:root{
-    /* Font Family */
-    --primaryFont: "Poppins", serif;
-    --secondaryFont: "Yeseva One", serif;
-    --footerPrimary: "Lobster", serif;
-    --footerSecondary: "Manrope", serif;
+:root {
+  /* Font Family */
+  --primaryFont: "Poppins", serif;
+  --secondaryFont: "Yeseva One", serif;
+  --footerPrimary: "Lobster", serif;
+  --footerSecondary: "Manrope", serif;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    max-width: 100vw;
-    min-height: 100vh;
-    font-family: var(--primaryFont);
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  font-family: var(--primaryFont);
+}
+/* Shared Style */
+.description {
+  color: rgb(62, 62, 62);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.btn-primary {
+  padding: 10px;
+  border-radius: 4px;
+  background: rgb(255, 89, 89);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.btn-primary:hover{
+    transform: scale(1.05);
+}
+/* Header */
+.header {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding-right: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-content {
+  max-width: 480px;
+  display: grid;
+  gap: 1rem;
+}
+.hero-image-container {
+  max-width: 400px;
+}
+.hero-image-container img{
+    width: 100%;
+}
+.hero-title {
+  font-family: var(--secondaryFont);
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-left: 0.7rem;
+  border-left: 4px solid rgb(255, 89, 89);
+}
+.hero-title .orange {
+  color: rgb(255, 173, 90);
+}
+.explore-more {
+  color: rgb(67, 67, 67);
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+/* Header End */
+
+/* Responsive */
+@media screen and (max-width:576px) {
+    .header{
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .hero-title{
+        border: none;
+    }
+}
+/* For Tablet */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .header{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
 }
