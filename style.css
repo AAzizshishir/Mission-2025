@@ -29,6 +29,7 @@ body {
   color: rgb(62, 62, 62);
   font-size: 0.8rem;
   font-weight: 400;
+  margin: 10px 0 14px 0;
 }
 .btn-primary {
   padding: 10px;
@@ -135,7 +136,6 @@ section {
   color: rgb(0, 0, 0);
   font-size: 1.1rem;
   font-weight: 600;
-  margin: 4px 0 10px 0;
 }
 .mission .description {
   color: rgb(66, 66, 66);
@@ -180,8 +180,8 @@ section {
   max-width: 1100px;
   margin: 80px auto;
   background-image: url(./images/shapes/shape-1.png);
-  background-position: right bottom;
-  background-size: 180px 180px;
+  background-position: bottom -20px right 20px;
+  background-size: 170px 170px;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -189,9 +189,11 @@ section {
 }
 .second-doc .image-container {
   padding-right: 80px;
+  max-width: 380px;
+  margin: 0 30px 30px 0;
 }
 .second-doc img {
-  width: 360px;
+  width: 330px;
 }
 .second-doc .content {
   max-width: 580px;
@@ -206,6 +208,38 @@ section {
   font-weight: 700;
   line-height: 44px;
 }
+/* Document Section End */
+.application {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 4.14rem 0 4.14rem 5.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.application .image-container {
+  width: 284px;
+  background-image: url(./images/shapes/shape-3.png), url(./images/shapes/shape-3.png),url(./images/shapes/shape-3.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100px 100px, 65px 65px, 65px 65px;
+  background-position: 25px 25px, bottom 30px left 48px, bottom 110px right 20px;
+  padding: 47px 32px 23px 60px;
+}
+.application .image-container img {
+  width: 192px;
+  height: 385px;
+  
+}
+.application .content {
+  max-width: 440px;
+}
+.application .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.application .title span {
+  color: rgb(255, 173, 90);
+}
 /* Responsive */
 @media screen and (max-width: 576px) {
   .header {
@@ -218,18 +252,23 @@ section {
   }
   .card-container,
   .documentation,
-  .second-doc {
+  .second-doc,
+  .application {
     flex-direction: column;
     padding: 0 20px;
   }
   .documentation,
-  .second-doc {
+  .second-doc,
+  .application {
     align-items: center;
     justify-content: center;
   }
   .documentation img,
   .second-doc img {
     width: 100%;
+  }
+  .application {
+    text-align: center;
   }
 }
 /* For Tablet */
