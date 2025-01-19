@@ -179,10 +179,6 @@ section {
 .second-doc {
   max-width: 1100px;
   margin: 80px auto;
-  background-image: url(./images/shapes/shape-1.png);
-  background-position: bottom -20px right 20px;
-  background-size: 170px 170px;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -190,10 +186,19 @@ section {
 .second-doc .image-container {
   padding-right: 80px;
   max-width: 380px;
-  margin: 0 30px 30px 0;
 }
-.second-doc img {
+
+.second-doc .circle {
+  width: 180px;
+  position: relative;
+  bottom: 110px;
+  left: 230px;
+}
+.second-doc .project-img {
   width: 330px;
+  position: relative;
+  z-index: 1;
+  margin-top: 190px;
 }
 .second-doc .content {
   max-width: 580px;
@@ -256,7 +261,7 @@ footer .title {
   color: rgb(255, 255, 255);
   margin-bottom: 0.7rem;
 }
-footer .title span{
+footer .title span {
   color: rgb(255, 89, 89);
 }
 footer p {
