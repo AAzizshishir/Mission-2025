@@ -219,7 +219,8 @@ section {
 }
 .application .image-container {
   width: 284px;
-  background-image: url(./images/shapes/shape-3.png), url(./images/shapes/shape-3.png),url(./images/shapes/shape-3.png);
+  background-image: url(./images/shapes/shape-3.png),
+    url(./images/shapes/shape-3.png), url(./images/shapes/shape-3.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 100px 100px, 65px 65px, 65px 65px;
   background-position: 25px 25px, bottom 30px left 48px, bottom 110px right 20px;
@@ -228,7 +229,6 @@ section {
 .application .image-container img {
   width: 192px;
   height: 385px;
-  
 }
 .application .content {
   max-width: 440px;
@@ -239,6 +239,31 @@ section {
 }
 .application .title span {
   color: rgb(255, 173, 90);
+}
+/* Application End */
+
+/* Footer */
+footer {
+  background: rgb(11, 13, 23);
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+}
+footer .title {
+  font-family: var(--footerPrimary);
+  font-size: 1.89rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.7rem;
+}
+footer .title span{
+  color: rgb(255, 89, 89);
+}
+footer p {
+  color: rgb(217, 219, 225);
+  font-family: var(--footerSecondary);
+  font-size: 0.7rem;
+  font-weight: 400;
 }
 /* Responsive */
 @media screen and (max-width: 576px) {
