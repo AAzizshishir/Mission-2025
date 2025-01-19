@@ -41,8 +41,15 @@ body {
   cursor: pointer;
   transition: transform 0.3s;
 }
-.btn-primary:hover{
-    transform: scale(1.05);
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+}
+main section {
+  margin-top: 80px;
 }
 /* Header */
 .header {
@@ -61,8 +68,8 @@ body {
 .hero-image-container {
   max-width: 400px;
 }
-.hero-image-container img{
-    width: 100%;
+.hero-image-container img {
+  width: 100%;
 }
 .hero-title {
   font-family: var(--secondaryFont);
@@ -70,10 +77,10 @@ body {
   font-weight: 400;
   padding-left: 0.8rem;
 }
-.title-container{
+.title-container {
   display: flex;
 }
-.title-style{
+.title-style {
   height: 80px;
   width: 4px;
   background: rgb(255, 89, 89);
@@ -89,22 +96,73 @@ body {
 }
 /* Header End */
 
+/* Mission */
+.mission-title {
+  color: rgb(19, 16, 58);
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.mission-title span {
+  color: rgb(255, 173, 90);
+}
+.card-container {
+  display: flex;
+  gap: 1rem;
+}
+.card-container .card {
+  flex-basis: 32%;
+  border-radius: 1.2rem;
+  padding: 18px 10px 20px 25px;
+}
+.card-container .card img {
+  width: 110px;
+  margin-left: -10px;
+  margin-bottom: -10px;
+}
+.card-1 {
+  background: rgba(79, 157, 166, 0.1);
+}
+.card-2 {
+  background: rgba(255, 89, 89, 0.1);
+}
+.card-3 {
+  background: rgb(255, 244, 214);
+}
+.card-title {
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 4px 0 10px 0;
+}
+.mission .description {
+  color: rgb(66, 66, 66);
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+/* Mission End */
 /* Responsive */
-@media screen and (max-width:576px) {
-    .header{
-        flex-direction: column;
-        text-align: center;
-        padding: 0 20px;
-    }
-    .title-style{
-        display: none;
-    }
+@media screen and (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .title-style {
+    display: none;
+  }
+  .card-container{
+    flex-direction: column;
+    padding: 0 20px;
+  }
 }
 /* For Tablet */
-@media screen and (min-width:576px) and (max-width:992px) {
-    .header{
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
 }
